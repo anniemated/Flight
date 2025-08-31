@@ -3,7 +3,7 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define mc = Character("Joshua")
+define mc = Character("You")
 define j = Character("Jude")
 
 
@@ -15,19 +15,26 @@ label start:
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 
-    scene bg room
+    scene black
 
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
-    show eileen happy
-
     # These display lines of dialogue.
 
-    e "You've created a new Ren'Py game."
+    "I open the door."
 
-    e "Once you add a story, pictures, and music, you can release it to the world!"
+    scene long
+
+    j "So it's you. Long time no see! Wanna sit?"
+    mc "..."
+    j "Don't be shy, Yasha."
+
+    scene close
+    show speak3
+
+    j "That's a lot better, isn't it?"
 
     # This ends the game.
 
