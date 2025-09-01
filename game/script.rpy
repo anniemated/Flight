@@ -11,30 +11,30 @@ define j = Character("Jude")
 
 label start:
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
-
     scene black
-
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
-
-    # These display lines of dialogue.
+    play music menu
 
     "I open the door."
 
+    play sound "creak.mp3"
     scene long
+    with fade
 
     j "So it's you. Long time no see! Wanna sit?"
     mc "..."
     j "Don't be shy, Yasha."
 
+    play sound "<from 0 to 2.5>steps.mp3"
     scene close
     show speak3
+    with fade
 
     j "That's a lot better, isn't it?"
+    
+    hide speak3
+    show default
+
+    mc "It is."
 
     # This ends the game.
 
