@@ -12,7 +12,7 @@ define j = Character("Jude")
 label start:
 
     scene black
-    play music menu
+    play music bg
 
     "I open the door."
 
