@@ -30,6 +30,7 @@ define config.version = "1.0"
 ## triple-quotes, and leave a blank line between paragraphs.
 
 define gui.about = _p("""
+A short, atmospheric visual novel about talking to your sick friend in the hospital. There’s only one problem: it seems you can’t remember much about yourself or the “friend” sitting in front of you…
 """)
 
 
